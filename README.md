@@ -1,15 +1,17 @@
 # 🚕 Taxi-Service 🚖
 
- Taxi-service is the simple web-appication that include registration, authentication and user interface for driver
+Taxi-service is a **simple** web-application that includes **registration**, **authentication**, and a user interface for drivers.
 
- ## ⭐️ Features:
+## 🔥 Features:
 
-- registration like a driver
-- authentication like a driver
-- create/update/removen a driver
-- create/update/removen a manufacturer
-- create/update/removen a car
-- display list of cars/manufacturers/drivers
-- add driver to car
-- get currect cars for authenticated driver
+- Registration for drivers
+- Authentication for drivers
+- Create, update, and remove driver profiles
+- Manage manufacturer profiles (create, update, remove)
+- Manage car profiles (create, update, remove)
+- Display lists of cars, manufacturers, and drivers
+- Associate drivers with cars
+- View a list of cars for the authenticated driver
+
+
  
