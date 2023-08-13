@@ -35,7 +35,7 @@ You need to have this tools to use this application:
 
 ###Instruction:
 
-1. Clone the repository
+1. git clone https: //github.com/your-username/your-taxi-service.git
 2. Set up your PostgreSQL database and update application.properties accordingly.
 3. Build and run the application: `mvn spring-boot:run`
 4. Access the application in your browser at: `http://localhost:8080`
