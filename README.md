@@ -6,7 +6,7 @@ Taxi-service is a **simple** web-application that includes **registration**, **a
 
 - Registration like a driver
 - Authentication like a driver
-- Create, update, and remove drivers
+- Manage drivers (create, update, remove)
 - Manage manufacturers (create, update, remove)
 - Manage cars (create, update, remove)
 - Display lists of cars, manufacturers, and drivers
