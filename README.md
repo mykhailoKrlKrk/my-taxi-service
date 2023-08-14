@@ -1,6 +1,6 @@
 # 🚕 Taxi-Service 🚖
 
-Taxi-service is a **simple** web-application that includes **registration**, **authentication**, and a user interface for drivers.
+Taxi-Service is a streamlined web application catering to drivers, offering registration, authentication, and a dedicated user interface.
 
 ## ⭐️ Functionality:
 
