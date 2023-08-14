@@ -4,8 +4,8 @@ Taxi-service is a **simple** web-application that includes **registration**, **a
 
 ## ⭐️ Functionality:
 
-- Registration for drivers
-- Authentication for drivers
+- Registration like a driver
+- Authentication like a driver
 - Create, update, and remove drivers
 - Manage manufacturers (create, update, remove)
 - Manage cars (create, update, remove)
@@ -33,12 +33,15 @@ You need to have this tools to use this application:
 - Tomcat
 - MySQL
 
-###Instruction:
+###To use this application you need to follow this instruction:
 
-1. git clone https: //github.com/your-username/your-taxi-service.git
-2. Set up your PostgreSQL database and update application.properties accordingly.
-3. Build and run the application: `mvn spring-boot:run`
-4. Access the application in your browser at: `http://localhost:8080`
+1. **Fork this repository** and copy link of project
+2. **Create new project** from Version Control
+3. Edit **ConnectionUtil.class** - configurate connection to your DB
+4. Create nessesary tables from **init_db.sql** file
+5. Install Tomcat and add to your project configuration **important** (do not forget to configure application path to “/”)
+6. Build your project before using to make sure everything went well lunching this command in terminal: 'maven clean package -e'
+7. run application!
 
 
 
