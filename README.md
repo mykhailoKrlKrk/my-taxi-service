@@ -20,8 +20,8 @@ The project follows a **Three-Tier Architecture**, consisting of the following l
 - Service - Orchestrates the interaction between the DAO layer and the controller layer.
 - controler - Accepts requests from clients, processes them using the service layer, and sends responses back.
 
-The project use following structure of derictories:
-##main package 
+#The project use following structure of derictories:
+
 - **Controller** - this layer is responsible for processing HTTP requests and returning an HTTP responses.
 - **dao** - this leyer is responsible for working with the database.
 - **exception** - here we store all custom exceptions that we use in application.
