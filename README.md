@@ -21,6 +21,7 @@ The project follows a **Three-Tier Architecture**, consisting of the following l
 - controler - Accepts requests from clients, processes them using the service layer, and sends responses back.
 
 The project use following structure of derictories:
+##main package 
 - **Controller** - this layer is responsible for processing HTTP requests and returning an HTTP responses.
 - **dao** - this leyer is responsible for working with the database.
 - **exception** - here we store all custom exceptions that we use in application.
@@ -28,7 +29,10 @@ The project use following structure of derictories:
 - **service** - all business logic of the project is concentrated here.
 - **util** - here we create connection for DB and set JDBC properties:
   <img width="611" alt="Знімок екрана 2023-08-14 о 21 06 29" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/489852da-67b2-4907-b8c8-48f4e2ef17d8">
-
+  
+- **web.filter** - we use this filter to verify user authentication.
+- **resources** - this directory store two files: **init_db** (this file stores a script for creating a database with the corresponding tables that are needed for) and **log4j2.xml** (configuration file for logger).
+- **webapp** - this directory stores file **web.xml** ((configuration file for controlers and filters), and all needed JSP files for displaying an application in browser and simple styles for them.
 
 ## 🛠️ Technologies Used:
 
