@@ -32,7 +32,7 @@ The project use following structure of derictories:
   
 - **web.filter** - we use this filter to verify user authentication.
 - **resources** - this directory store two files: **init_db** (this file stores a script for creating a database with the corresponding tables that are needed for) and **log4j2.xml** (configuration file for logger).
-- **webapp** - this directory stores file **web.xml** ((configuration file for controlers and filters), and all needed JSP files for displaying an application in browser and simple styles for them.
+- **webapp** - this directory stores file **web.xml** (configuration file for controlers and filters), and all needed JSP files for displaying an application in browser and simple styles for them.
 
 ## 🛠️ Technologies Used:
 
