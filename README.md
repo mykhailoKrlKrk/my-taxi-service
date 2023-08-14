@@ -15,7 +15,20 @@ Taxi-service is a **simple** web-application that includes **registration**, **a
 
 ## 📂 Project Structure:
 
-The project follows a well-organized structure, with directories for models, controllers, dao,services and other components.
+The project follows a **Three-Tier Architecture**, consisting of the following layers:
+- Dao - Responsible for querying and manipulating data in the database.
+- Service - Orchestrates the interaction between the DAO layer and the controller layer.
+- controler - Accepts requests from clients, processes them using the service layer, and sends responses back.
+
+The project use following structure of derictories:
+- **Controller** - this layer is responsible for processing HTTP requests and returning an HTTP responses.
+- **dao** - this leyer is responsible for working with the database.
+- **exception** - here we store all custom exceptions that we use in application.
+- **model** - here we have basic rolles that application work with.
+- **service** - all business logic of the project is concentrated here.
+- **util** - here we create connection for DB and set JDBC properties:
+  <img width="611" alt="Знімок екрана 2023-08-14 о 21 06 29" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/489852da-67b2-4907-b8c8-48f4e2ef17d8">
+
 
 ## 🛠️ Technologies Used:
 
