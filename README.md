@@ -39,9 +39,10 @@ You need to have this tools to use this application:
 2. **Create new project** from Version Control
 3. Edit **ConnectionUtil.class** - configurate connection to your DB
 4. Create nessesary tables from **init_db.sql** file
-5. Install Tomcat and add to your project configuration **important** (do not forget to configure application path to “/”)
-6. Build your project before using to make sure everything went well lunching this command in terminal: 'maven clean package -e'
-7. run application!
+5. Install Tomcat and add to your project configuration
+   **important** (do not forget to configure application path to “/”)
+7. Build your project before using lunching this command in terminal: 'maven clean package -e'
+8. run application!
 
 
 
