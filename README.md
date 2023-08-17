@@ -27,20 +27,9 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 ### 3. Controller Layer
 - Accepts client requests and efficiently handles API interactions.
 
-Additionally, the project follows a structured organization with the following directories:
-
-- **Controller**: Processes HTTP requests and sends HTTP responses.
-- **DAO**: Handles database interactions.
-- **Exception**: Stores custom exceptions used in the application.
-- **Model**: Contains core application entities.
-- **Service**: Concentrates application's business logic.
 - **Util**: Establishes database connections and configures JDBC properties:
   <img width="611" alt="Знімок екрана 2023-08-14 о 21 06 29" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/489852da-67b2-4907-b8c8-48f4e2ef17d8">
   
-- **Web.filter**: Utilizes filters for user authentication verification.
-- **Resources**: Stores important files, including the `init_db.sql` script for database setup and `log4j2.xml` for logger configuration.
-- **Webapp**: Holds the `web.xml` configuration file for controllers and filters, along with necessary JSP files and styles for browser display.
-
 ## 🛠️ Technologies Used
 
 - Java
