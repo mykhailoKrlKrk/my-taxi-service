@@ -4,27 +4,20 @@ Taxi-Service is a streamlined web application catering to drivers, offering regi
 
 ## ⭐️ Functionality
 
-The project provides the following functionalities through its API endpoints:
+The application provides the following functionalities:
 
-| Endpoint                        | Description                                                                 | Response                  |
-|--------------------------------|-----------------------------------------------------------------------------|---------------------------|
-| `POST /api/drivers/register`   | Register a new driver                                                      | JSON response with status |
-| `POST /api/drivers/authenticate`| Authenticate a driver                                                      | JSON response with token  |
-| `GET /api/drivers`              | Retrieve list of drivers                                                   | JSON array of driver info|
-| `POST /api/drivers`             | Create a new driver                                                        | JSON response with status |
-| `PUT /api/drivers/{id}`         | Update driver information by ID                                            | JSON response with status |
-| `DELETE /api/drivers/{id}`      | Remove a driver by ID                                                      | JSON response with status |
-| `GET /api/manufacturers`        | Retrieve list of manufacturers                                             | JSON array of manufacturer info|
-| `POST /api/manufacturers`       | Create a new manufacturer                                                  | JSON response with status |
-| `PUT /api/manufacturers/{id}`   | Update manufacturer information by ID                                      | JSON response with status |
-| `DELETE /api/manufacturers/{id}`| Remove a manufacturer by ID                                                | JSON response with status |
-| `GET /api/cars`                 | Retrieve list of cars                                                      | JSON array of car info   |
-| `POST /api/cars`                | Create a new car                                                           | JSON response with status |
-| `PUT /api/cars/{id}`            | Update car information by ID                                               | JSON response with status |
-| `DELETE /api/cars/{id}`         | Remove a car by ID                                                         | JSON response with status |
-| `POST /api/driver-car`          | Associate a driver with a specific car                                     | JSON response with status |
-| `GET /api/driver-cars/{driverId}`| Retrieve list of cars associated with a driver                             | JSON array of car info   |
-| `GET /api/personalized-cars`    | Retrieve a curated list of cars assigned to the authenticated driver       | JSON array of car info   |
+| Feature                           | Description                                                                  |
+|----------------------------------|------------------------------------------------------------------------------|
+| Registration and Authentication | Drivers can register and authenticate themselves.                          |
+| Driver Management                | Admins can manage drivers, including creation, updating, and removal.        |
+| Manufacturer Management          | Admins can manage manufacturers, including creation, updating, and removal.  |
+| Car Management                   | Admins can conveniently handle cars, including creation, updating, removal. |
+| List Displays                    | Users can access lists of cars, manufacturers, and drivers.                  |
+| Driver-Car Association           | Link drivers with specific cars.                                            |
+| Personalized Car List            | Authenticated drivers can view a curated list of assigned cars.              |
+
+
+Please note that while the above description provides a summary, tools like Swagger can help you generate more detailed API documentation, outlining the endpoints, their purposes, and the expected request and response formats.
 ## 📂 Project Structure
 
 The project employs a **Three-Tier Architecture**, consisting of these layers:
