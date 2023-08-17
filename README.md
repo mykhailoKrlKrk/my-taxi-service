@@ -4,7 +4,6 @@ Taxi-Service is a streamlined web application catering to drivers, offering regi
 
 ## ⭐️ Functionality
 
-The application provides the following functionalities:
 
 | Feature                           | Description                                                                  |
 |----------------------------------|------------------------------------------------------------------------------|
@@ -15,6 +14,7 @@ The application provides the following functionalities:
 | List Displays                    | Users can access lists of cars, manufacturers, and drivers.                  |
 | Driver-Car Association           | Link drivers with specific cars.                                            |
 | Personalized Car List            | Authenticated drivers can view a curated list of assigned cars.              |
+
 
 
 
@@ -31,6 +31,8 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 
 ### 3. Controller Layer
 - Accepts client requests and efficiently handles API interactions.
+
+
   
 ## 🛠️ Technologies Used
 
@@ -41,6 +43,8 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 - Maven
 - Logger
 - Servlets & Jsp
+
+
 
 ## 🚀 Getting Started
 
