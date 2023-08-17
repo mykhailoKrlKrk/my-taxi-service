@@ -4,15 +4,27 @@ Taxi-Service is a streamlined web application catering to drivers, offering regi
 
 ## ⭐️ Functionality
 
-- Registration like a driver
-- Authentication like a driver
-- Manage drivers (create, update, remove)
-- Manage manufacturers (create, update, remove)
-- Car Management: Conveniently handle cars (create, update, remove).
-- List Displays: Instantly access lists of cars, manufacturers, and drivers.
-- Driver-Car Association: Link drivers with specific cars.
-- Personalized Car List: View a curated list of cars assigned to the authenticated driver.
+The project provides the following functionalities through its API endpoints:
 
+| Endpoint                        | Description                                                                 | Response                  |
+|--------------------------------|-----------------------------------------------------------------------------|---------------------------|
+| `POST /api/drivers/register`   | Register a new driver                                                      | JSON response with status |
+| `POST /api/drivers/authenticate`| Authenticate a driver                                                      | JSON response with token  |
+| `GET /api/drivers`              | Retrieve list of drivers                                                   | JSON array of driver info|
+| `POST /api/drivers`             | Create a new driver                                                        | JSON response with status |
+| `PUT /api/drivers/{id}`         | Update driver information by ID                                            | JSON response with status |
+| `DELETE /api/drivers/{id}`      | Remove a driver by ID                                                      | JSON response with status |
+| `GET /api/manufacturers`        | Retrieve list of manufacturers                                             | JSON array of manufacturer info|
+| `POST /api/manufacturers`       | Create a new manufacturer                                                  | JSON response with status |
+| `PUT /api/manufacturers/{id}`   | Update manufacturer information by ID                                      | JSON response with status |
+| `DELETE /api/manufacturers/{id}`| Remove a manufacturer by ID                                                | JSON response with status |
+| `GET /api/cars`                 | Retrieve list of cars                                                      | JSON array of car info   |
+| `POST /api/cars`                | Create a new car                                                           | JSON response with status |
+| `PUT /api/cars/{id}`            | Update car information by ID                                               | JSON response with status |
+| `DELETE /api/cars/{id}`         | Remove a car by ID                                                         | JSON response with status |
+| `POST /api/driver-car`          | Associate a driver with a specific car                                     | JSON response with status |
+| `GET /api/driver-cars/{driverId}`| Retrieve list of cars associated with a driver                             | JSON array of car info   |
+| `GET /api/personalized-cars`    | Retrieve a curated list of cars assigned to the authenticated driver       | JSON array of car info   |
 ## 📂 Project Structure
 
 The project employs a **Three-Tier Architecture**, consisting of these layers:
@@ -26,9 +38,6 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 
 ### 3. Controller Layer
 - Accepts client requests and efficiently handles API interactions.
-
-- **Util**: Establishes database connections and configures JDBC properties:
-  <img width="611" alt="Знімок екрана 2023-08-14 о 21 06 29" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/489852da-67b2-4907-b8c8-48f4e2ef17d8">
   
 ## 🛠️ Technologies Used
 
