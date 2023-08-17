@@ -55,8 +55,8 @@ Additionally, the project follows a structured organization with the following d
 
 **Important:** Ensure you have the necessary tools before proceeding:
 
-- Apache Tomcat - version (9.0.50), https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/9.0.50/
-- MySQL - sersion - (8.1.0), https://dev.mysql.com/downloads/mysql/
+- [Apache Tomcat](https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/9.0.50/) - Version 9.0.50
+- [MySQL](https://dev.mysql.com/downloads/mysql/) - Version 8.1.0
 
   **To use this application**
 
