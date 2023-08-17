@@ -2,7 +2,7 @@
 
 Taxi-Service is a streamlined web application catering to drivers, offering registration, authentication, and a dedicated user interface.
 
-## ⭐️ Functionality:
+## ⭐️ Functionality
 
 - Registration like a driver
 - Authentication like a driver
@@ -13,18 +13,18 @@ Taxi-Service is a streamlined web application catering to drivers, offering regi
 - Driver-Car Association: Link drivers with specific cars.
 - Personalized Car List: View a curated list of cars assigned to the authenticated driver.
 
-## 📂 Project Structure:
+## 📂 Project Structure
 
 The project employs a **Three-Tier Architecture**, consisting of these layers:
 
-### 1. DAO Layer:
+### 1. DAO Layer
 - Responsible for efficient querying and manipulation of database data.
 
-### 2. Service Layer:
+### 2. Service Layer
 - Orchestrates interactions between the DAO and controller layers.
 - Implements critical business logic for seamless functionality.
 
-### 3. Controller Layer:
+### 3. Controller Layer
 - Accepts client requests and efficiently handles API interactions.
 
 Additionally, the project follows a structured organization with the following directories:
@@ -41,7 +41,7 @@ Additionally, the project follows a structured organization with the following d
 - **Resources**: Stores important files, including the `init_db.sql` script for database setup and `log4j2.xml` for logger configuration.
 - **Webapp**: Holds the `web.xml` configuration file for controllers and filters, along with necessary JSP files and styles for browser display.
 
-## 🛠️ Technologies Used:
+## 🛠️ Technologies Used
 
 - Java
 - Tomcat
@@ -51,14 +51,14 @@ Additionally, the project follows a structured organization with the following d
 - Logger
 - Servlets & Jsp
 
-## 🚀 Getting Started:
+## 🚀 Getting Started
 
 **Important:** Ensure you have the necessary tools before proceeding:
 
-- Apache Tomcat
-- MySQL
+- Apache Tomcat - version (9.0.50), https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/9.0.50/
+- MySQL - sersion - (8.1.0), https://dev.mysql.com/downloads/mysql/
 
-  **To use this application:**
+  **To use this application**
 
 1. Fork this repository and copy the project link.
 2. Create a new project using Version Control in your IDE.
