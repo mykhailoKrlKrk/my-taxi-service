@@ -17,7 +17,7 @@ The application provides the following functionalities:
 | Personalized Car List            | Authenticated drivers can view a curated list of assigned cars.              |
 
 
-Please note that while the above description provides a summary, tools like Swagger can help you generate more detailed API documentation, outlining the endpoints, their purposes, and the expected request and response formats.
+
 ## 📂 Project Structure
 
 The project employs a **Three-Tier Architecture**, consisting of these layers:
