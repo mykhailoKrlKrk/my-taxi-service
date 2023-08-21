@@ -38,7 +38,7 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 
 - [Java](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) - Version 11
 - [Apache Tomcat](https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/9.0.50/) - Version 9.0.50
-- [Java JDBC](https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.28)
+- [Java JDBC](https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.28) - Version 8.0.28
 - [MySQL](https://dev.mysql.com/downloads/mysql/) - Version 8.1.0
 - [Maven](https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.8.0/) - Version 3.8.0
 - [Logger](https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core/2.17.1) - Version 2.17.1
