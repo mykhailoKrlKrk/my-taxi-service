@@ -73,6 +73,10 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 
    b)Creating new project from VSC
 3. Edit the `ConnectionUtil.class` to configure your database connection.
+
+
+<img width="615" alt="Знімок екрана 2023-09-10 о 16 59 48" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/f5b79eaf-424c-4d01-bae2-e7fe3f65c327">
+
 4. Create the required tables from the `init_db.sql` file.
 5. Install Apache Tomcat and configure it in your project settings.
 
