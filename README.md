@@ -59,17 +59,15 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 
 2. Create a new project using Version Control in your IDE and use your SSH key.
    <img width="396" alt="Знімок екрана 2023-09-10 о 16 41 58" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/b530adb3-7cae-4179-bb72-ddab1e31096e">
+
+
+
    a)Copy SSH key
 
-
-
-
-
-
-
-
-   
    <img width="590" alt="Знімок екрана 2023-09-10 о 16 40 56" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/249274d5-6faf-4ca6-82c9-b13ee4586c12">
+
+
+
    b)creating new project from VSC
 4. Edit the `ConnectionUtil.class` to configure your database connection.
 5. Create the required tables from the `init_db.sql` file.
