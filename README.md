@@ -71,7 +71,7 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 
 
 
-   b)creating new project from VSC
+   b)Creating new project from VSC
 3. Edit the `ConnectionUtil.class` to configure your database connection.
 4. Create the required tables from the `init_db.sql` file.
 5. Install Apache Tomcat and configure it in your project settings.
@@ -79,7 +79,7 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 
    <img width="1032" alt="Знімок екрана 2023-09-10 о 16 45 50" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/9e291793-f2b6-4a88-b1af-42759ddd42fb">
 6. Before launching, build the project using this terminal command: `mvn clean package -e`.
-7. Run the application and explore its functionalities!
+7. Run the application and explore its functionalities!🚀
 
 
 
