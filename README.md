@@ -48,18 +48,19 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 
 ## 🚀 Getting Started
 
-**Important:** Ensure you have the necessary tools before proceeding:
-
-- Apache Tomcat
-- MySQL
+**Important:** Ensure you have the necessary tools (from Used technologies) before proceeding
 
   **To use this application**
 
-1. Fork this repository and copy the project link.
-2. Create a new project using Version Control in your IDE.
+1. Fork this repository and copy the project link in your repo.
+<img width="144" alt="Знімок екрана 2023-09-10 о 16 36 48" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/8d915606-568f-4452-beb9-e3c96f52497e">
+2. a)Create a new project using Version Control in your IDE and b)Use your SSH key;
+   <img width="590" alt="Знімок екрана 2023-09-10 о 16 40 56" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/249274d5-6faf-4ca6-82c9-b13ee4586c12">
+   <img width="396" alt="Знімок екрана 2023-09-10 о 16 41 58" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/b530adb3-7cae-4179-bb72-ddab1e31096e">
 3. Edit the `ConnectionUtil.class` to configure your database connection.
 4. Create the required tables from the `init_db.sql` file.
 5. Install Apache Tomcat and configure it in your project settings.
+   <img width="1032" alt="Знімок екрана 2023-09-10 о 16 45 50" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/9e291793-f2b6-4a88-b1af-42759ddd42fb">
 6. Before launching, build the project using this terminal command: `mvn clean package -e`.
 7. Run the application and explore its functionalities!
 
