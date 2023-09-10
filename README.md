@@ -63,6 +63,9 @@ The project employs a **Three-Tier Architecture**, consisting of these layers:
 
 
 
+
+
+
    
    <img width="590" alt="Знімок екрана 2023-09-10 о 16 40 56" src="https://github.com/mykhailoKrlKrk/my-taxi-service/assets/133024859/249274d5-6faf-4ca6-82c9-b13ee4586c12">
    b)creating new project from VSC
