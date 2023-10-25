@@ -1,76 +1,146 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<style>
-    .table_dark {
-        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-        width: 70%;
-        color: #7C5FAB;
-        font-size: 40px;
-        text-align: center;
-        border-collapse: collapse;
-        background: #FEF4AB;
-        margin: auto;
-    }
-
-    .table_dark th {
-        color: #7C5FAB;
-        border-bottom: 1px solid #98E2CA;
-        padding: 12px 17px;
-        font-size: 14px;
-    }
-
-    .table_dark td {
-        color: #7C5FAB;
-        border-bottom: 1px solid #98E2CA;
-        border-right: 1px solid #98E2CA;
-        padding: 7px 17px;
-        font-size: 14px;
-    }
-
-    .table_dark tr:last-child td {
-        border-bottom: none;
-    }
-
-    .table_dark td:last-child {
-        border-right: none;
-    }
-
-    .table_dark tr:hover td {
-        text-decoration: underline;
-    }
-</style>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>All drivers</title>
+    <title>Add Driver</title>
+    <style>
+        body {
+            font-family: "Arial, sans-serif";
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            width: 70%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #764ba2;
+            color: #fff;
+            font-size: 24px;
+        }
+        td a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            background: #eaeaea;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        td a:hover {
+            background: #764ba2;
+            color: #fff;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            border-radius: 5px;
+            width: 50%;
+        }
+        .close {
+            color: #888;
+            float: right;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: #333;
+        }
+        .form-container {
+            text-align: center;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="number"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            border: 1px solid #98E2CA;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .form-container input[type="submit"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            border: 1px solid #98E2CA;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 18px;
+            background-color: #fff;
+            color: #007bff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #764ba2;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-<form method="post" id="driver" action="${pageContext.request.contextPath}/drivers/add"></form>
-<h1 class="table_dark">Add driver:</h1>
-<table border="1" class="table_dark">
-    <tr>
-        <th>Name</th>
-        <th>License number</th>
-        <th>Login</th>
-        <th>Password</th>
-        <th>Add</th>
-    </tr>
-    <tr>
-        <td>
-            <input type="text" name="name" form="driver" required>
-        </td>
-        <td>
-            <input type="text" name="license_number" form="driver" required>
-        </td>
-        <td>
-            <input type="text" name="login" form="driver" required>
-        </td>
-        <td>
-            <input type="password" name="password" form="driver" required>
-        </td>
-        <td>
-            <input type="submit" name="add" form="driver">
-        </td>
-    </tr>
-</table>
+<div class="container">
+    <h1 style="text-align: center; color: #764ba2; font-size: 36px;">Add Driver:</h1>
+    <div class="form-container">
+        <form method="post" id="driver" action="${pageContext.request.contextPath}/drivers/add">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="license_number" placeholder="License Number" required>
+            <input type="text" name="login" placeholder="Login" required>
+            <input type="text" name="password" placeholder="Password" required>
+            <input type="submit" name="add" value="Add Driver">
+        </form>
+    </div>
+</div>
+<% if (request.getAttribute("errorMsg") != null) { %>
+<div id="errorModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>${request.getAttribute("errorMsg")}</p>
+    </div>
+</div>
+<script>
+    function closeModal() {
+        document.getElementById('errorModal').style.display = 'none';
+    }
+</script>
+<% } %>
 </body>
 </html>
